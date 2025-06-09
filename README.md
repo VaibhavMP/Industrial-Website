@@ -1,5 +1,5 @@
 # Industrial-Website
-My first project in XpertStim IT Services pvt.ltd
+My First Project In XpertStim IT Services pvt.ltd
 Project Overview:
 This project is a professional and responsive static website developed for Xpertstim IT Services Pvt Ltd, a tech firm based in Chakan, Maharashtra. The goal is to showcase the company’s services, industry impact, contact details, and digital presence effectively through a clean, modern interface.
  What We’ve Completed So Far:
