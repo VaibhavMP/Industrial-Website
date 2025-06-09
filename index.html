@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Industrial Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <h1>Welcome to Xpertstim IT Services Pvt Ltd</h1>
+    <p>Innovating digital solutions across industries</p>
+  </header>
+
+  <section class="welcome">
+    <h2>Welcome Message</h2>
+    <p>Xpertstim IT Services Pvt Ltd, based in Chakan, Maharashtra, 
+       It is an innovative tech firm providing IT consulting, web development, and open-source mentoring for businesses aiming at digital growth.</p>
+  </section>
+
+  <section class="highlights">
+    <h2>Product Highlights</h2>
+    <ul>
+      <li>Custom Web Development</li>
+      <li>Open-source Tech Mentorship</li>
+      <li>Business Digital Transformation</li>
+    </ul>
+  </section>
+
+  <section class="about">
+    <h2>About the Company</h2>
+    <p>Founded on May 19, 2022, Xpertstim IT Services Pvt Ltd is a privately owned IT solutions company registered under CIN U72900PN2022PTC211402. With an authorized capital of ₹4.9 lakh, it is led by directors Aakash Dattatray Raut and Shubham Dattatray Raut. The company is committed to delivering innovative digital services to businesses across India.</p>
+  </section>
+
+  <section class="industries-served">
+    <h2>Application Areas / Industries Served</h2>
+    <p>Our solutions support industries including Education, Manufacturing, Healthcare, and Startups with tailored IT systems and development support.</p>
+  </section>
+
+  <section class="quick-contact">
+    <h2>Need Help?</h2>
+    <div class="center-button">
+      <button class="quick-enquiry" onclick="document.querySelector('.contact').scrollIntoView({ behavior: 'smooth' });">Quick Enquiry</button>
+    </div>
+  </section>
+
+  <section class="industries">
+    <h2>Industries WebServe</h2>
+    <div class="industry-card">
+      <h3>Education</h3>
+      <p>Learning platforms, virtual classrooms, content management</p>
+      <img src="https://via.placeholder.com/300x150?text=Education" alt="Education" />
+    </div>
+    <div class="industry-card">
+      <h3>Manufacturing</h3>
+      <p>Automation software, IoT integration, real-time dashboards</p>
+      <img src="https://via.placeholder.com/300x150?text=Manufacturing" alt="Manufacturing" />
+    </div>
+    <div class="industry-card">
+      <h3>Startups</h3>
+      <p>Web apps, MVP development, IT consulting</p>
+      <img src="https://via.placeholder.com/300x150?text=Startups" alt="Startups" />
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://via.placeholder.com/200x150" alt="Office Space" onclick="openLightbox(this.src)" />
+      <img src="https://via.placeholder.com/200x150" alt="Team Collaboration" onclick="openLightbox(this.src)" />
+      <img src="https://via.placeholder.com/200x150" alt="Workshop" onclick="openLightbox(this.src)" />
+      <img src="https://via.placeholder.com/200x150" alt="Tech Setup" onclick="openLightbox(this.src)" />
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Expanded View" />
+  </div>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="Phone" required />
+      <textarea rows="4" placeholder="Message"></textarea>
+      <button type="submit" class="send-btn">Send</button>
+    </form>
+    <div class="info">
+      <p><strong>Company Name:</strong> Xpertstim IT Services Pvt Ltd</p>
+      <p><strong>CIN:</strong> U72900PN2022PTC211402</p>
+      <p><strong>Directors:</strong> Aakash Dattatray Raut, Shubham Dattatray Raut</p>
+      <p><strong>Address:</strong> Sara Business Center, Talegaon-Chakan Road, Kharabwadi, Chakan, Maharashtra 410501</p>
+      <p><strong>Phone:</strong> +91-7620658346</p>
+      <p><strong>Email:</strong> xpertstim@gmail.com</p>
+      <p><strong>Operating Hours:</strong> Mon–Sat: 10:30 AM – 6:30 PM</p>
+      <p><strong>Follow Us:</strong>
+        <a href="#">Instagram</a> |
+        <a href="#">LinkedIn</a> |
+        <a href="#">Twitter</a>
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.452021337503!2d73.8648814!3d18.6593496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c77d4fa6b3fd%3A0x5a5619c1a55c3b49!2sSara%20Business%20Center!5e0!3m2!1sen!2sin!4v1717952647865!5m2!1sen!2sin"
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+</body>
+</html>
