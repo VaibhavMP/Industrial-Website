@@ -2,64 +2,191 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Us - Xpertstim IT Services</title>
-  <link rel="stylesheet" href="about-styles.css" />
-  <script src="about-script.js" defer></script>
+  <title>Vaishnavi Industries – Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <h1>About Xpertstim IT Services Pvt Ltd</h1>
+
+  <!-- reuse top bar + navbar from home page -->
+  <div class="top-bar">
+    <span><i class="fa-solid fa-location-dot"></i> Pune</span>
+    <span><i class="fa-solid fa-phone"></i> 08048039522</span>
+    <span><i class="fa-solid fa-envelope"></i> infovaishnavi.in@gmail.com</span>
+  </div>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <img src="https://via.placeholder.com/140x50?text=LOGO" alt="Logo" />
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Latest News</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li class="dropdown">
+          <a href="#">More <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="company-profile">
-    <h2>Company Profile</h2>
-    <p>
-      Xpertstim IT Services Pvt Ltd is a leading IT solutions provider based in Chakan, Maharashtra. 
-      Established in 2022, we specialize in delivering cutting-edge digital services including web development, IT consulting, and open-source mentoring to a diverse clientele.
-    </p>
-  </section>
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> &gt; <span>About</span> &gt; <span>About Us</span>
+  </div>
 
-  <section class="mission-vision">
-    <h2>Mission & Vision</h2>
-    <p><strong>Mission:</strong> To empower businesses through innovative and customized digital solutions that accelerate growth and efficiency.</p>
-    <p><strong>Vision:</strong> To be recognized as the most trusted technology partner for enterprises across India, leading the way in digital transformation.</p>
-  </section>
+  <!-- ======== ABOUT SECTION (replace old block) ======== -->
+<section class="about-section">
+  <div class="about-container">
 
-  <section class="core-values">
-    <h2>Core Values</h2>
-    <ul>
-      <li>Integrity and Transparency</li>
-      <li>Customer-Centric Innovation</li>
-      <li>Continuous Learning and Growth</li>
-      <li>Collaboration and Teamwork</li>
-      <li>Excellence in Execution</li>
-    </ul>
-  </section>
+    <!-- Right: info & tabs -->
+    <div class="about-info">
+      <h2>ABOUT OUR <span class="highlight">ORGANIZATION</span></h2>
 
-  <section class="infrastructure">
-    <h2>Infrastructure & Facilities</h2>
-    <p>
-      Our office is located at Sara Business Center, Talegaon-Chakan Road, equipped with modern workstations, high-speed internet, and collaborative spaces to foster creativity and productivity.
-    </p>
-    <img src="https://via.placeholder.com/600x300?text=Infrastructure+Image" alt="Infrastructure" />
-  </section>
+      <!-- Tab buttons -->
+      <div class="about-tabs">
+        <button class="tab-link active" data-tab="profile">Company Profile</button>
+        <button class="tab-link" data-tab="mission">Mission & Vision</button>
+        <button class="tab-link" data-tab="values">Core Values</button>
+        <button class="tab-link" data-tab="infra">Infrastructure & Facilities</button>
+        <button class="tab-link" data-tab="experience">Experience & Achievements</button>
+      </div>
 
-  <section class="experience-achievements">
-    <h2>Experience & Achievements</h2>
-    <p>
-      Since inception, Xpertstim has successfully delivered projects for education, manufacturing, and startup sectors. We have mentored numerous developers in open-source technologies and contributed to impactful digital transformations.
-    </p>
-    <ul>
-      <li>Registered under CIN: U72900PN2022PTC211402</li>
-      <li>Led by Directors: Aakash Dattatray Raut & Shubham Dattatray Raut</li>
-      <li>Completed 50+ projects across sectors</li>
-      <li>Recognized as a promising startup in Maharashtra in 2023</li>
-    </ul>
-  </section>
+      <!-- Tab content -->
+      <div id="profile" class="tab-content active">
+        <p>
+          Vaishnavi Industries is a leading manufacturer of high‑quality
+          process equipment for diverse industrial sectors. Our relentless focus on
+          innovation and customer satisfaction has helped us build a trusted brand
+          in India and beyond.
+        </p>
+      </div>
 
-  <footer>
-    <p>© 2025 Xpertstim IT Services Pvt Ltd</p>
+      <div id="mission" class="tab-content">
+        <p><strong>Mission:</strong> Deliver world‑class engineering solutions that
+           boost productivity and safety for our clients.</p>
+        <p><strong>Vision:</strong> Become a global benchmark for quality,
+           sustainability & continuous improvement.</p>
+      </div>
+
+      <div id="values" class="tab-content">
+        <ul>
+          <li><strong>Integrity:</strong> We do the right thing, always.</li>
+          <li><strong>Quality:</strong> Zero‑defect mindset in every project.</li>
+          <li><strong>Innovation:</strong> Constantly seeking smarter solutions.</li>
+          <li><strong>Customer‑Focus:</strong> Your success is our priority.</li>
+        </ul>
+      </div>
+
+      <div id="infra" class="tab-content">
+        <p>
+          Our Pune facility spans 20,000 sq ft, housing CNC machining,
+          automated welding lines and a dedicated QA/QC lab. We operate
+          with ISO‑certified processes and an integrated ERP for real‑time tracking.
+        </p>
+      </div>
+
+      <div id="experience" class="tab-content">
+        <p>
+          <strong>15+ years</strong> of industry experience, 300+ successful
+          installations, and multiple awards for excellence in manufacturing
+          and safety compliance.
+        </p>
+      </div>
+    </div><!-- /about-info -->
+  </div><!-- /about-container -->
+</section>
+<!-- ======== /ABOUT SECTION ======== -->
+
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Footer Demo</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- External footer stylesheet -->
+  <link rel="stylesheet" href="footer.css" />
+</head>
+<body>
+
+  <!-- ---------------   FOOTER   --------------- -->
+  <footer class="site-footer">
+
+    <!-- Top‑row columns -->
+    <div class="footer-columns">
+
+      <!-- Opening Hours -->
+      <div class="footer-col hours">
+        <h3><i class="fa-regular fa-clock"></i> Opening Hours</h3>
+        <ul>
+          <li>Mon : 8 AM – 7 PM</li>
+          <li>Tue : 8 AM – 7 PM</li>
+          <li>Wed : 8 AM – 7 PM</li>
+          <li>Thu : Closed</li>
+          <li>Fri : 8 AM – 7 PM</li>
+          <li>Sat : 8 AM – 7 PM</li>
+          <li>Sun : 8 AM – 7 PM</li>
+        </ul>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="footer-col subscribe">
+        <h3><i class="fa-regular fa-envelope"></i> Subscribe Us</h3>
+        <p>Subscribe to our newsletter!</p>
+
+        <form class="subscribe-form">
+          <input type="email" placeholder="Email address…">
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+      <!-- Social Share -->
+      <div class="footer-col social">
+        <h3><i class="fa-solid fa-share-nodes"></i> Social Share</h3>
+        <div class="icon-row">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+    </div><!-- /footer-columns -->
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <p>©2025 | Made in India with <a href="#">Boost 360 for Manufacturing</a></p>
+      <span class="footer-links">
+        <a href="#">Report Abuse</a> • 
+        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.452021337503!2d73.8648814!3d18.6593496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c77d4fa6b3fd%3A0x5a5619c1a55c3b49!2sSara%20Business%20Center!5e0!3m2!1sen!2sin!4v1717952647865!5m2!1sen!2sin" target="_blank" rel="noopener">SITEMAP</a>
+      </span>
+    </div>
+
   </footer>
+  <!-- -------------  /FOOTER  ------------- -->
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vaishnavi Industries – Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 </body>
 </html>
+
