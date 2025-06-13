@@ -1,109 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Industrial Website</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="style.css">
+    <script src="gallery.js" defer></script>
 </head>
 <body>
-  <header class="hero">
-    <h1>Welcome to Xpertstim IT Services Pvt Ltd</h1>
-    <p>Innovating digital solutions across industries</p>
-  </header>
-
-  <section class="welcome">
-    <h2>Welcome Message</h2>
-    <p>Xpertstim IT Services Pvt Ltd, based in Chakan, Maharashtra, 
-       It is an innovative tech firm providing IT consulting, web development, and open-source mentoring for businesses aiming at digital growth.</p>
-  </section>
-
-  <section class="highlights">
-    <h2>Product Highlights</h2>
-    <ul>
-      <li>Custom Web Development</li>
-      <li>Open-source Tech Mentorship</li>
-      <li>Business Digital Transformation</li>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <span>📍 Pune</span>
+    <span>📞 08048039522</span>
+    <span>📧 infovaishnavi.in@gmail.com</span>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a href="#">About ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Services ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Consulting</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Latest News</a></li>
+      <li class="dropdown">
+        <a href="#">Gallery ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Videos</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">More ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">🔍</a></li>
+      <li><a href="#">🛒</a></li>
     </ul>
-  </section>
+    <ul class="dropdown-content">
+  <li><a href="company.html">Company</a></li>
+  <li><a href="team.html">Team</a></li>
+  <li><a href="support.html">Support</a></li>
+  <li><a href="projects.html">Projects</a></li>
+</ul>
+  </nav>
 
-  <section class="about">
-    <h2>About the Company</h2>
-    <p>Founded on May 19, 2022, Xpertstim IT Services Pvt Ltd is a privately owned IT solutions company registered under CIN U72900PN2022PTC211402. With an authorized capital of ₹4.9 lakh, it is led by directors Aakash Dattatray Raut and Shubham Dattatray Raut. The company is committed to delivering innovative digital services to businesses across India.</p>
-  </section>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="slider">
+      <div class="slide active" style="background-image:https://backgroundimages.withfloats.com/actual/5ef85a24d51ff5000120a3aa.jpg "></div>
+      <div class="slide" style="background-image:https://backgroundimages.withfloats.com/actual/65d9bbeaa90dc08b95e8aa5d "></div>
+      <div class="slide" style="background-image: https://backgroundimages.withfloats.com/actual/5ee4b86b6507fc0001c483aa"></div>
+    </div>
 
-  <section class="industries-served">
-    <h2>Application Areas / Industries Served</h2>
-    <p>Our solutions support industries including Education, Manufacturing, Healthcare, and Startups with tailored IT systems and development support.</p>
-  </section>
+    <div class="content-box">
+      <h1>VAISHNAVI INDUSTRIES <span class="phone">08048039522</span></h1>
+      <p>
+        VAISHNAVI INDUSTRIES VISION & MISSION Vision To be a world-class leader in our business and achieve global standards through quality and innovation. We are committed to bringing value and higher returns for our associates and s
+        <a href="#" class="read-more">...Read More</a>
+      </p>
+      <div class="btn-group">
+        <a href="#" class="btn yellow">VIEW SERVICES</a>
+        <a href="#" class="btn dark">SEND ENQUIRY</a>
+      </div>
+    </div>
 
-  <section class="quick-contact">
-    <h2>Need Help?</h2>
-    <div class="center-button">
-      <button class="quick-enquiry" onclick="document.querySelector('.contact').scrollIntoView({ behavior: 'smooth' });">Quick Enquiry</button>
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
   </section>
 
-  <section class="industries">
-    <h2>Industries WebServe</h2>
-    <div class="industry-card">
-      <h3>Education</h3>
-      <p>Learning platforms, virtual classrooms, content management</p>
-      <img src="https://via.placeholder.com/300x150?text=Education" alt="Education" />
-    </div>
-    <div class="industry-card">
-      <h3>Manufacturing</h3>
-      <p>Automation software, IoT integration, real-time dashboards</p>
-      <img src="https://via.placeholder.com/300x150?text=Manufacturing" alt="Manufacturing" />
-    </div>
-    <div class="industry-card">
-      <h3>Startups</h3>
-      <p>Web apps, MVP development, IT consulting</p>
-      <img src="https://via.placeholder.com/300x150?text=Startups" alt="Startups" />
-    </div>
-  </section>
+  <script src="script.js"></script>
+  <section class="services-section">
+  <h2 class="section-title">Our Services</h2>
+  <div class="underline"></div>
 
-  <section class="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="https://via.placeholder.com/200x150" alt="Office Space" onclick="openLightbox(this.src)" />
-      <img src="https://via.placeholder.com/200x150" alt="Team Collaboration" onclick="openLightbox(this.src)" />
-      <img src="https://via.placeholder.com/200x150" alt="Workshop" onclick="openLightbox(this.src)" />
-      <img src="https://via.placeholder.com/200x150" alt="Tech Setup" onclick="openLightbox(this.src)" />
+  <div class="services-container">
+    <div class="service-card">
+      <div class="overlay">
+        <a href="#" class="details-btn">VIEW DETAILS</a>
+      </div>
+      <img src="https://productimages.withfloats.com/tile/65d9d314ab7322da2200e316.jpg" alt="Mixing Tank">
+      <p>SS316/Mixing tanks</p>
     </div>
-  </section>
 
-  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-    <img id="lightbox-img" src="" alt="Expanded View" />
+    <div class="service-card">
+      <div class="overlay">
+        <a href="#" class="details-btn">VIEW DETAILS</a>
+      </div>
+      <img src="https://productimages.withfloats.com/tile/65d9b3ba2c17740d3240422a.jpg" alt="Deodoriser">
+      <p>Deodoriser</p>
+    </div>
+
+    <div class="service-card">
+      <div class="overlay">
+        <a href="#" class="details-btn">VIEW DETAILS</a>
+      </div>
+      <img src="https://productimages.withfloats.com/tile/65d9b15dce2dbcccd8a49732.jpg" alt="CIP Tank">
+      <p>SS316/CIP TANK 10KL</p>
+    </div>
   </div>
 
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email" required />
-      <input type="tel" placeholder="Phone" required />
-      <textarea rows="4" placeholder="Message"></textarea>
-      <button type="submit" class="send-btn">Send</button>
-    </form>
-    <div class="info">
-      <p><strong>Company Name:</strong> Xpertstim IT Services Pvt Ltd</p>
-      <p><strong>CIN:</strong> U72900PN2022PTC211402</p>
-      <p><strong>Directors:</strong> Aakash Dattatray Raut, Shubham Dattatray Raut</p>
-      <p><strong>Address:</strong> Sara Business Center, Talegaon-Chakan Road, Kharabwadi, Chakan, Maharashtra 410501</p>
-      <p><strong>Phone:</strong> +91-7620658346</p>
-      <p><strong>Email:</strong> xpertstim@gmail.com</p>
-      <p><strong>Operating Hours:</strong> Mon–Sat: 10:30 AM – 6:30 PM</p>
-      <p><strong>Follow Us:</strong>
-        <a href="#">Instagram</a> |
-        <a href="#">LinkedIn</a> |
-        <a href="#">Twitter</a>
-      </p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.452021337503!2d73.8648814!3d18.6593496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c77d4fa6b3fd%3A0x5a5619c1a55c3b49!2sSara%20Business%20Center!5e0!3m2!1sen!2sin!4v1717952647865!5m2!1sen!2sin"
-        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <div class="view-all-btn">
+    <a href="#" class="yellow-btn">VIEW ALL SERVICES</a>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="about-content">
+    <div class="about-gallery">
+      <img src="https://fpimages.withfloats.com/tile/5ef857c6d51ff5000120a37f.png" alt="">
+      <img src="https://fpimages.withfloats.com/tile/5ef857c6d51ff5000120a37f.png" alt="">
+      <img src="img3.jpg" alt="">
+      <img src="img4.jpg" alt="">
+      <img src="img5.jpg" alt="">
+      <img src="img6.jpg" alt="">
+      <img src="img7.jpg" alt="">
     </div>
-  </section>
+
+    <div class="about-text">
+      <h2><span>ABOUT OUR</span> <span class="highlight">ORGANIZATION</span></h2>
+      <h3>VAISHNAVI INDUSTRIES</h3>
+      <h4>VISION & MISSION</h4>
+      <p class="vision-title">Vision</p>
+      <p class="vision-desc">
+        To be a world-class leader in our business and achieve global standards through
+        quality and innovation. We are committed to bringing value and higher returns for our
+        associates and s...<span class="read-more">Read More</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="services-available">
+    <div class="icon-circle">
+      <img src="factory-icon.png" alt="Factory Icon">
+    </div>
+    <h2 class="number">4</h2>
+    <p>Services Available</p>
+  </div>
+</section>
+
+<section class="latest-news-section">
+  <div class="headline">
+    <h2>LATEST NEWS</h2>
+    <div class="underline"></div>
+  </div>
+
+  <div class="news-cards">
+    <div class="news-card">
+      <img src="https://bizimages.withfloats.com/tile/65d9b787ab7322da2200d10f.jpg" alt="Product 1">
+      <p>We Vaishnavi Industries dealing following product and services #Reactors #Process Columns & Towers #Heat Exchangers...</p>
+      <a href="#" class="read-more-btn">READ MORE</a>
+    </div>
+
+    <div class="news-card">
+      <img src="https://bizimages.withfloats.com/tile/65d9b6f02c17740d32404651.jpg" alt="Product 2">
+      <p>We Vaishnavi Industries dealing following product and services #Reactors #Pressure Vessels #Degassers #Scrubbers...</p>
+      <a href="#" class="read-more-btn">READ MORE</a>
+    </div>
+
+    <div class="news-card">
+      <img src="https://bizimages.withfloats.com/tile/65d9b679bb4329eecf553591.jpg" alt="Product 3">
+      <p>We Vaishnavi Industries dealing following product and services #Reactors #Dryers #Heat Exchangers #Purifier Vessels...</p>
+      <a href="#" class="read-more-btn">READ MORE</a>
+    </div>
+    <div class="view-all-btn">
+    <a href="#" class="yellow-btn">VIEW ALL SERVICES</a>
+  </div>
+  </div>
+</section>
+<section class="gallery-section">
+  <div class="gallery-header">
+    <h2>Our Gallery</h2>
+ 
+    <div class="underline"></div>
+  </div>
+<div class="carousel-container">
+  <button class="carousel-btn prev">&#10094;</button>
+
+  <div class="carousel-track-wrapper">
+    <ul class="carousel-track" id="carouselTrack">
+      <li class="carousel-slide"><img src="https://fpimages.withfloats.com/tile/65d9b81bbb4329eecf55378c.jpg" alt=""></li>
+      <li class="carousel-slide"><img src="https://fpimages.withfloats.com/tile/65d9b9b07d5970cd2ac1f7f5.jpg" alt=""></li>
+      <li class="carousel-slide"><img src="https://fpimages.withfloats.com/tile/65d9b81c4511e6bf669722c7.jpg" alt=""></li>
+      <li class="carousel-slide"><img src="https://fpimages.withfloats.com/tile/65d9b9b07d5970cd2ac1f7f4.jpg" alt=""></li>
+      <li class="carousel-slide"><img src="https://fpimages.withfloats.com/tile/65d9b818bb4329eecf55377e.jpg" alt=""></li>
+      <li class="carousel-slide"><img src="https://fpimages.withfloats.com/tile/65d9b9b2a8261a9a32bdfb93.jpg" alt=""></li>
+    </ul>
+  </div>
+
+  <button class="carousel-btn next">&#10095;</button>
+</section>
+
+<section class="callback-section">
+  <div class="callback-container">
+    <div class="callback-left">
+      <h2>Request A Call Back</h2>
+      <div class="underline"></div>
+      <p class="subheading">Any Questions About Us?</p>
+      <p class="details">
+        If you have any kind of query, please don't hesitate to contact us on our 
+        <span class="highlight">Email</span> and you can also contact by calling 
+        <a href="tel:08048039522" class="phone">08048039522</a>
+      </p>
+    </div>
+
+    <div class="callback-right">
+      <form>
+        <input type="text" placeholder="Your Email or Contact Number*" required>
+        <textarea placeholder="Type your requirement in detail.." rows="5" required></textarea>
+        <button type="submit">SEND MESSAGE</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Call‑Back Popup</title>
+
+  <!-- Google Font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="callback.css" />
+</head>
+<body>
+
+  <!-- Call‑back modal -->
+  <div class="callback-modal">
+    <span class="close-btn">&times;</span>
+
+    <h2>
+      Looking for something specific? <br />
+      <span>We’re just a call away.</span>
+    </h2>
+
+    <p>Share your number to get a call‑back.</p>
+
+    <!-- Phone input -->
+    <div class="phone-input">
+      <div class="country-code">🇮🇳 +91</div>
+      <input type="text" placeholder="81234 56789" />
+      <button class="call-btn">📞 Call me back</button>
+    </div>
+
+    <p class="small-note">Rest assured, your details are secure with us.</p>
+
+    <!-- Custom links -->
+    <div class="custom-links">
+      Have a custom requirement? <a href="#">Write to us</a><br />
+      In a hurry? <a href="tel:08048039522">Call us now 08048039522</a>
+    </div>
+
+    <p class="small-note">
+      *Please keep 0 or +91 before the number you dial.
+    </p>
+  </div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exit Popup</title>
+  <link rel="stylesheet" href="exit-popup.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="exit-popup">
+    <span class="close-btn">&times;</span>
+    
+    <h2>Leaving so soon?</h2>
+    <p class="subtitle">Tell us what you were looking for!<br>
+    Share your query for personalised assistance.</p>
+
+    <textarea placeholder="Enter your requirement here..."></textarea>
+
+    <button class="call-back-btn">📞 Want a call back? Click here</button>
+
+    <div class="quick-call">
+      In a hurry? <a href="tel:08048039522">Call us now 08048039522</a>
+    </div>
+
+    <p class="note">*Please keep 0 or +91 before the number you dial.</p>
+  </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Footer Demo</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- External footer stylesheet -->
+  <link rel="stylesheet" href="footer.css" />
+</head>
+<body>
+
+  <!-- ---------------   FOOTER   --------------- -->
+  <footer class="site-footer">
+
+    <!-- Top‑row columns -->
+    <div class="footer-columns">
+
+      <!-- Opening Hours -->
+      <div class="footer-col hours">
+        <h3><i class="fa-regular fa-clock"></i> Opening Hours</h3>
+        <ul>
+          <li>Mon : 8 AM – 7 PM</li>
+          <li>Tue : 8 AM – 7 PM</li>
+          <li>Wed : 8 AM – 7 PM</li>
+          <li>Thu : Closed</li>
+          <li>Fri : 8 AM – 7 PM</li>
+          <li>Sat : 8 AM – 7 PM</li>
+          <li>Sun : 8 AM – 7 PM</li>
+        </ul>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="footer-col subscribe">
+        <h3><i class="fa-regular fa-envelope"></i> Subscribe Us</h3>
+        <p>Subscribe to our newsletter!</p>
+
+        <form class="subscribe-form">
+          <input type="email" placeholder="Email address…">
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+      <!-- Social Share -->
+      <div class="footer-col social">
+        <h3><i class="fa-solid fa-share-nodes"></i> Social Share</h3>
+        <div class="icon-row">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+    </div><!-- /footer-columns -->
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <p>©2025 | Made in India with <a href="#">Boost 360 for Manufacturing</a></p>
+      <span class="footer-links">
+        <a href="#">Report Abuse</a> • 
+        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.452021337503!2d73.8648814!3d18.6593496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c77d4fa6b3fd%3A0x5a5619c1a55c3b49!2sSara%20Business%20Center!5e0!3m2!1sen!2sin!4v1717952647865!5m2!1sen!2sin" target="_blank" rel="noopener">SITEMAP</a>
+      </span>
+    </div>
+
+  </footer>
+  <!-- -------------  /FOOTER  ------------- -->
+  
+
+
+
+
+
+
 </body>
 </html>
